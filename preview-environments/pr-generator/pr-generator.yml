@@ -15,8 +15,6 @@ spec:
           secretName: github-token
           key: token
       requeueAfterSeconds: 1800
-      labels:
-        - preview-ready
   template:
     metadata:
       name: 'myapp-{{.branch}}-{{.number}}'
