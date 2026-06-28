@@ -7,3 +7,6 @@ Take the certification yourself at [https://codefresh.io/courses/get-gitops-cert
 " bad hohoho !!" 
 
 
+ " the good commit" 
+
+
