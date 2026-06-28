@@ -6,5 +6,5 @@ Take the certification yourself at [https://codefresh.io/courses/get-gitops-cert
 
 
 
-"good commit" 
+ " the good commit" 
 
