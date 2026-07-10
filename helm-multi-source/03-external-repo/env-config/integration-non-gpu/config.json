@@ -1,0 +1,7 @@
+{
+  "env": "integration-non-gpu",
+  "chart": "0.2.0",
+  "version": "qa",
+  "type": "non-prod",
+  "region": "us"
+}
