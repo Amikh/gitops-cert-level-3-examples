@@ -16,9 +16,7 @@ spec:
     metadata:
       name: '{{.env}}' 
     spec:
-      # The project the application belongs to.
       project: default
-
       sources:
         - repoURL: https://kostis-codefresh.github.io/multi-sources-example
           chart: my-chart
@@ -30,20 +28,15 @@ spec:
             - $values/helm-multi-source/my-values/env-type/{{.type}}-values.yaml  
             - $values/helm-multi-source/my-values/regions/{{.region}}-values.yaml                
             - $values/helm-multi-source/my-values/envs/{{.env}}-values.yaml
-        - repoURL: 'https://github.com/codefresh-contrib/gitops-cert-level-3-examples.git'
+        - repoURL: 'https://github.com/Amikh/gitops-cert-level-3-examples.git'
           targetRevision: HEAD
           ref: values
-      
-      # Destination cluster and namespace to deploy the application
       destination:
         server: https://kubernetes.default.svc
         namespace: '{{.env}}'
-
-      # Sync policy
       syncPolicy:
         syncOptions:
           - CreateNamespace=true  
         automated: 
           prune: true 
-          selfHeal: true 
-    
+          selfHeal: true
